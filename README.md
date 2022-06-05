@@ -5,20 +5,21 @@ Structure:
    1)Import Module
    2)
 
-# STEPS:
+STEPS:
+
 STEP1-Install Libraries Tkinter and base64 if not install
 Command:
         pip install Tkinter
         pip install base64
 
 Step2-Initialize a window for Tkinter
-# creating root object
+creating root object
 root = Tk()
 
-# defining size of window
+defining size of window
 root.geometry("1200x6000")
 
-# setting up the title of window
+setting up the title of window
 root.title("Message Encode and Decode")
 
 Tops = Frame(root, width = 1600, relief = SUNKEN)
