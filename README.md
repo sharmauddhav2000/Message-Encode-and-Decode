@@ -1,4 +1,4 @@
-## Message-Encode-and-Decode
+# Message-Encode-and-Decode
 A project on Message with encryption and decryption using Tkinter, base64, Time and random. 
 
 Structure:
