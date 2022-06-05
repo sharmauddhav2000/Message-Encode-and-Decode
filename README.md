@@ -1,4 +1,4 @@
-# Message-Encode-and-Decode
+## Message-Encode-and-Decode
 A project on Message with encryption and decryption using Tkinter, base64, Time and random. 
 
 Structure:
@@ -27,4 +27,3 @@ Tops.pack(side = TOP)
 f1 = Frame(root, width = 800, height = 700,
 							relief = SUNKEN)
 f1.pack(side = LEFT)
-
