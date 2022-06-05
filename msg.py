@@ -23,12 +23,12 @@ f1 = Frame(root, width = 800, height = 700,
 f1.pack(side = LEFT)
 
 # ==============================================
-#				 TIME
+         TIME DISPLAY
 # ==============================================
 localtime = time.asctime(time.localtime(time.time()))
 
 lblInfo = Label(Tops, font = ('helvetica', 50, 'bold'),
-		text = "SECRET MESSAGING \n Vigenère cipher",
+		text = "SECRET MESSAGING",
 					fg = "Black", bd = 10, anchor='w')
 					
 lblInfo.grid(row = 0, column = 0)
@@ -46,7 +46,7 @@ mode = StringVar()
 Result = StringVar()
 
 # exit function
-def qExit():
+def Exit():
 	root.destroy()
 
 # Function to reset the window
@@ -116,7 +116,7 @@ txtService = Entry(f1, font = ('arial', 16, 'bold'),
 						
 txtService.grid(row = 2, column = 3)
 
-# Vigenère cipher
+
 import base64
 
 # Function to encode
@@ -155,8 +155,10 @@ def Ref():
 
 	if (m == 'e'):
 		Result.set(encode(k, clear))
-	else:
+	elif (m=='d'):
 		Result.set(decode(k, clear))
+	else:
+		Result.set('Invaid Mode')
 
 # Show message button
 btnTotal = Button(f1, padx = 16, pady = 8, bd = 16, fg = "black",
